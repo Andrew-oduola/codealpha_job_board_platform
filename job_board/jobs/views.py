@@ -3,7 +3,7 @@ from rest_framework import viewsets, filters
 from django_filters.rest_framework import DjangoFilterBackend
 
 from .models import JobListing, JobApplication
-from .filters import JobListingFilter
+from .filters import JobListingFilter, JobApplicationFilter
 
 
 # Create your views here.
@@ -20,4 +20,8 @@ class JobListingViewset(viewsets.ModelViewSet):
 class JobApplicationViewset(viewsets.ModelViewSet):
     queryset = JobApplication.objects.all()
     serializer_class = JobApplicationSerializer
+    filter_backends = [DjangoFilterBackend, filters.SearchFilter, filters.OrderingFilter]
+    filterset_class = JobApplicationFilter
+    search_fields = ['job__title', 'applicant__name']  # Enable search by job title and applicant name
+    ordering_fields = ['applied_at', 'status']  # Sorting by application date and status
     
