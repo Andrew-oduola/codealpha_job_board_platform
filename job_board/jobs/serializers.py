@@ -4,7 +4,8 @@ from .models import JobListing, JobApplication
 class JobListingSerializer(serializers.ModelSerializer):
     class Meta:
         model = JobListing
-        fields = ['id', 'employer', 'title', 'description', 'job_type', 'location', 'salary', 'posted_on', 'is_active']
+        fields = ['id', 'employer', 'title', 'description', 'job_type', 'location', 
+                  'salary', 'posted_on', 'is_active']
         
         
 class JobApplicationSerializer(serializers.ModelSerializer):
