@@ -26,5 +26,7 @@ class JobApplicationViewset(viewsets.ModelViewSet):
     filterset_class = JobApplicationFilter
     search_fields = ['job__title', 'applicant__name']  # Enable search by job title and applicant name
     ordering_fields = ['applied_at', 'status']  # Sorting by application date and status
+    permission_classes = [IsAuthenticated]
+
     
     
