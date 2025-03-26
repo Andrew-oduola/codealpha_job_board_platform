@@ -41,3 +41,5 @@ class JobApplication(models.Model):
     
     def __str__(self):
         return f"{self.job} - {self.applicant}"
+    
+    
