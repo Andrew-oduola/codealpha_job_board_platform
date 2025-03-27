@@ -47,8 +47,8 @@ Additionally, the project includes comprehensive test coverage using `pytest` an
 
 1. **Clone the Repository**
 ```bash
-git clone https://github.com/Andrew-oduola/job_board_api.git
-cd job_board_api
+git clone https://github.com/Andrew-oduola/codealpha_job_board_platform.git
+cd job_board
 ```
 
 2. **Create a Virtual Environment and Activate It**
