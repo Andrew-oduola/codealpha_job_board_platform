@@ -96,25 +96,19 @@ Access the application at: [http://127.0.0.1:8000/](http://127.0.0.1:8000/)
 - **Verify Token**: `POST /auth/jwt/verify/`
 
 ### Job Listings
-- **List Jobs**: `GET /api/jobs/`
-- **Create Job**: `POST /api/jobs/`
-- **Retrieve Job**: `GET /api/jobs/{id}/`
-- **Update Job**: `PUT /api/jobs/{id}/`
-- **Delete Job**: `DELETE /api/jobs/{id}/`
+- **List Jobs**: `GET /api/jobs/list/`
+- **Create Job**: `POST /api/jobs/list/`
+- **Retrieve Job**: `GET /api/jobs/list/{id}/`
+- **Update Job**: `PUT /api/jobs/list/{id}/`
+- **Delete Job**: `DELETE /api/jobs/list/{id}/`
 
-### Candidate Profiles
-- **List Profiles**: `GET /api/candidates/`
-- **Create Profile**: `POST /api/candidates/`
-- **Retrieve Profile**: `GET /api/candidates/{id}/`
-- **Update Profile**: `PUT /api/candidates/{id}/`
-- **Delete Profile**: `DELETE /api/candidates/{id}/`
 
 ### Job Applications
-- **List Applications**: `GET /api/applications/`
-- **Create Application**: `POST /api/applications/`
-- **Retrieve Application**: `GET /api/applications/{id}/`
-- **Update Application**: `PUT /api/applications/{id}/`
-- **Delete Application**: `DELETE /api/applications/{id}/`
+- **List Applications**: `GET /api/jobs/applications/`
+- **Create Application**: `POST /api/jobs/applications/`
+- **Retrieve Application**: `GET /api/jobs/applications/{id}/`
+- **Update Application**: `PUT /api/jobs/applications/{id}/`
+- **Delete Application**: `DELETE /api/jobs/applications/{id}/`
 
 ## Running Tests and Coverage Analysis
 
@@ -155,9 +149,9 @@ Open `htmlcov/index.html` in a browser to view detailed coverage analysis.
 │── 📄 poetry.lock     # Poetry dependencies lock file
 │── 📄 pyproject.toml  # Project dependencies and config
 │── 📄 .env            # Environment variables
-│── 📄 README.md       # Project documentation
-│── 📄 .gitignore
 │── 📄 pytest.ini
+📄 README.md       # Project documentation
+📄 .gitignore
 ```
 
 Happy Coding! 🚀

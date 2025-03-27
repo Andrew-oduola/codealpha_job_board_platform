@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'rest_framework_simplejwt',
     'djoser',
     'django_filters',
+    'drf_yasg',
     
     'users',
     'jobs',
