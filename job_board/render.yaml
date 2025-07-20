@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: job_board
+    env: python
+    buildCommand: |
+      pip install -r requirements.txt
+      python manage.py migrate
+      python manage.py collectstatic --noinput
+    startCommand: gunicorn job_board.wsgi:application
+    

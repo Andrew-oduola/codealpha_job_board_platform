@@ -23,15 +23,16 @@ from drf_yasg import openapi
 
 schema_view = get_schema_view(
     openapi.Info(
-        title="Your API Title",
-        default_version='v1',
-        description="API documentation for your project",
-        terms_of_service="https://your-terms-url/",
-        contact=openapi.Contact(email="your-email@example.com"),
-        license=openapi.License(name="Your License"),
+        title="Job Board API",
+        default_version='v1.0.0',
+        description="A platform for job seekers and employers to connect.",
+        contact=openapi.Contact(
+            name="Andrew Oduola A",
+            email="andrewoduola@gmail.com",
+            url="https://github.com/Andrew-oduola"
+        ),
     ),
     public=True,
-    permission_classes=(permissions.AllowAny,),
 )
 
 
